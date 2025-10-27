@@ -89,7 +89,7 @@ public class Main {
         try {
             employeeService.getEmployeeById(999, employees);
         } catch (EmployeeNotFoundException e) {
-            log.warn("✓ Обработано исключение: {}", e.getMessage());
+            log.warn("Обработано исключение: {}", e.getMessage());
         }
     }
 
@@ -155,7 +155,7 @@ public class Main {
         try {
             fileService.loadEmployeesFromFile("nonexistent.txt");
         } catch (FileLoadException e) {
-            log.error("✓ Обработано исключение: {}", e.getMessage());
+            log.error("Обработано исключение: {}", e.getMessage());
         }
     }
 }
